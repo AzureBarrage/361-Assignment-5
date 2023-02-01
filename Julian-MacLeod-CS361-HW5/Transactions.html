@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Transactions</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Transactions</h1>
+[<a href="index.html">Home</a>] 
+[<a href="Customers.html">Customers</a>]
+[<a href="Exchanges.html">Exchanges</a>]
+[<a href="Products.html">Products</a>] 
+[<a href="Currencies.html">Currencies</a>]
+[<a href="Login.html">Login</a>]
+[<a href="Profile.html">Profile</a>]
+<div id="browse" style="display: block">
+<p><strong>Browse Transactions</strong></p>
+<table border="1" cellpadding="5">
+    <tr>
+      <th>transactionId</th>
+      <th>purchaseDate</th>
+      <th>soldDate</th>
+      <th>purchasePrice</th>
+      <th>sellingPrice</th>
+      <th>status</th>
+      <th>networkFee</th>
+
+    </tr>
+    <tr>
+      <td align="right">8407781e</td>
+      <td align="right">01/01/22</td>
+      <td align="right">null</td>
+      <td align="right">$7,500.00</td>
+      <td align="right">null</td>
+      <td align="right">null</td>
+      <td align="right">$1.00</td>
+    </tr>
+    <tr>
+      <td align="right" >491f0bae</td>
+      <td align="right" >05/03/22</td>
+      <td align="right" >10/21/22</td>
+      <td align="right" >$100,000.00</td>
+      <td align="right" >$50,000.00</td>
+      <td align="right" >sold</td>
+      <td align="right" >$2.00</td>
+    </tr>
+    <tr>
+      <tr>
+      <td align="right" >adbc0b9b</td>
+      <td align="right" >07/06/22</td>
+      <td align="right" >null</td>
+      <td align="right" >$2,500.00</td>
+      <td align="right" >null</td>
+      <td align="right" >null</td>
+      <td align="right" >$3.00</td>
+    </tr>
+    <tr>
+      <td align="right" >f169e609</td>
+      <td align="right" >02/03/22</td>
+      <td align="right" >null</td>
+      <td align="right" >$20,000.00</td>
+      <td align="right" >null</td>
+      <td align="right" >null</td>
+      <td align="right" >$4.00</td>
+    </tr>
+    <tr>
+      <td align="right" >2cce5886</td>
+      <td align="right" >04/22/22</td>
+      <td align="right" >10/21/22</td>
+      <td align="right" >$1.25</td>
+      <td align="right" >$2.00</td>
+      <td align="right" >sold</td>
+      <td align="right" >$5.00</td>
+    </tr>
+  </table>
+  <br>
+  <form>
+    <fieldset>
+      <legend>Add Transaction</legend>
+      <label for="purchaseDate">Purchase Date:</label>
+      <input type="date" id="date" name="Purchase Date"><br><br>
+      <label for="soldDate">Sold Date:</label>
+      <input type="date" id="soldDate" name="Sold Date"><br><br>
+      <label for="purchasePrice">Purchase Price:</label>
+      <input type="number" id="purchasePrice" name="Purchase Price"><br><br>
+      <label for="sellingPrice">Selling Price:</label>
+      <input type="number" id="sellingPrice" name="Selling Price"><br><br>
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="Status"><br><br>
+      <label for="networkFee">Network Fee:</label>
+      <input type="number" id="networkFee" name="Network Fee"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </fieldset>
+  </form>
+
+
+</body>
+</html>

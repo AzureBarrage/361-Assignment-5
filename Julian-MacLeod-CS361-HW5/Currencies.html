@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Currencies</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Currencies</h1>
+[<a href="index.html">Home</a>]
+[<a href="Transactions.html">Transactions</a>]
+[<a href="Customers.html">Customers</a>]
+[<a href="Exchanges.html">Exchanges</a>]
+[<a href="Products.html">Products</a>] 
+[<a href="Login.html">Login</a>]
+[<a href="Profile.html">Profile</a>]
+<div id="browse" style="display: block">
+<p><strong>Browse Currencies</strong></p>
+<table border="1" cellpadding="5">
+    <caption>Currencies</caption>
+    <colgroup>
+      <tr></tr>
+      <tr></tr>
+      <tr></tr>
+    </colgroup>
+    <tr>
+      <col>
+      <td>currencyId</td>
+      <th scope="col" >EB1</th>
+      <th scope="col" >BK1</th>
+      <th scope="col" >EC1</th>
+      <th scope="col" >BB1</th>
+      <th scope="col" >DK1</th>
+    </col>
+    <col>
+    <td>cryptoName</td>
+      <th scope="col" align="right" >Ethereum</th>
+      <th scope="col" align="right" >Bitcoin</th>
+      <th scope="col" align="right" >Ethereum</th>
+      <th scope="col" align="right" >Bitcoin</th>
+      <th scope="col" align="right" >Dogecoin</th>
+    </tr>
+  </col>
+    <col>
+    <td>cryptoAmount</td>
+      <th scope="col" align="right" >3</th>
+      <th scope="col" align="right" >2</th>
+      <th scope="col" align="right" >1</th>
+      <th scope="col" align="right" >1</th>
+      <th scope="col" align="right" >5</th>
+    </col>
+    <col>
+      <td>exchangeId</td>
+      <th scope="col" align="right">A1</th>
+      <th scope="col" align="right">A2</th>
+      <th scope="col" align="right">A3</th>
+      <th scope="col" align="right">A4</th>
+      <th scope="col" align="right">A5</th>
+    </col>
+</table>
+<br>
+<form>
+  <fieldset>
+    <legend>Add Currencies</legend>
+    <label for="cryptoName">Crypto Name:</label>
+    <input type="text" id="cryptoName" name="cryptoName"><br><br>
+    <label for="cryptoAmount">Crypto Amount:</label>
+    <input type="number" id="cryptoAmount" name="cryptoAmount"><br><br>
+    <label for="exchangeName">Exchange Name:</label>
+    <select name="exchangeName" id="exchangeName">
+      <option value="Binance">Binance</option>
+      <option value="Coinbase">Coinbase</option>
+      <option value="Kraken">Kraken</option>
+      <option value="Kucoin">Kucoin</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </fieldset>
+</form>
+
+<form id="updateCurrencies">
+  <legend><strong>Update Currency</strong></legend>
+      <fieldset class="updateCurrencies">
+        <label for="currencyId">Currency Id:</label>
+        <select name="currencyId" id="currencyId">
+          <option value="EB1">EB1</option>
+          <option value="BK1">BK1</option>
+          <option value="EC1">EC1</option>
+          <option value="DJ1">BB1</option>
+          <option value="middle">DK1</option>
+        </select><br><br>
+        <label>Crypto Name</label> <input type="textbox" name="crytoName"><br><br>
+        <label>Crypto Amount </label> <input type="number" name="cryptoAmount"><br><br>
+        <label for="exchangeName">Exchange Name:</label>
+
+        <select name="exchangeName" id="exchangeName">
+          <option value="Binance">Binance</option>
+          <option value="Coinbase">Coinbase</option>
+          <option value="Kraken">Kraken</option>
+          <option value="Kucoin">Kucoin</option>
+        </select><br><br>
+      <input class="btn" type="submit" id="UpdateSaveProducts" value="Update">
+      <input class="btn" type="button" value="cancel" >
+</fieldset>
+</form>
+
+
+
+</body>
+</html>
+

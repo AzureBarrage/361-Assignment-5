@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Customers</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Customers</h1>
+[<a href="index.html">Home</a>]
+[<a href="Transactions.html">Transactions</a>]
+[<a href="Exchanges.html">Exchanges</a>]
+[<a href="Products.html">Products</a>] 
+[<a href="Currencies.html">Currencies</a>]
+[<a href="Login.html">Login</a>]
+[<a href="Profile.html">Profile</a>]
+<div id="browse" style="display: block">
+<p><strong>Browse Customers</strong></p>
+<table border="1" cellpadding="5">
+    <tr>
+      <td><strong>Delete</strong></td>
+      <th>customerId</th>
+      <th>firstName</th>
+      <th>lastName</th>
+      <th>email</th>
+      <th>password</th>
+      <th>Exchanges_customerId</th>
+      <th>Products_productId</th>
+    </tr>
+    <tr>
+      <td><a href="#">Delete</a></td>
+      <td align="right" >1</td>
+      <td align="right" >John</td>
+      <td align="right" >Wayne</td>
+      <td align="right" >pog@aol.com</td>
+      <td align="right" >wordpass</td>
+      <td align="right" >1</td>
+      <td align="right" >FR1</td>
+    </tr>
+    <tr>
+      <td><a href="#">Delete</a></td>
+      <td align="right" >2</td>
+      <td align="right" >Jim</td>
+      <td align="right" >Hartwell</td>
+      <td align="right" >jhartwell@aol.com</td>
+      <td align="right" >dog</td>
+      <td align="right" >2</td>
+      <td align="right" >MI1</td>
+    </tr>
+    <tr>
+      <tr>
+      <td><a href="#">Delete</a></td>
+      <td align="right" >3</td>
+      <td align="right" >Linda</td>
+      <td align="right" >Cromwell</td>
+      <td align="right" >lCromwell@aol.com</td>
+      <td align="right">cat</td>
+      <td align="right" >3</td>
+      <td align="right" >PR1</td>
+    </tr>
+
+    <tr>
+      <td><a href="#">Delete</a></td>
+      <td align="right" >4</td>
+      <td align="right" >Moira</td>
+      <td align="right" >Aamana</td>
+      <td align="right" >maamana@aol.com</td>
+      <td align="right" >bat</td>
+      <td align="right" >4</td>
+      <td align="right" >FR2</td>
+    </tr>
+
+    <tr>
+      <td><a href="#">Delete</a></td>
+      <td align="right" >5</td>
+      <td align="right" >Lucio</td>
+      <td align="right" >Banana</td>
+      <td align="right" >Lbanana@aol.com</td>
+      <td align="right" >pig</td>
+      <td align="right" >5</td>
+      <td align="right" >MI2</td>
+    </tr>
+  </table>
+
+  <br>
+  <!-- <form action="/form/submit" method="GET"> 
+    <fieldset>
+      <legend>Search Customers</legend>
+      <p> Search for any customers using this service</p>
+      <input type="text" name="text" class="search" placeholder="Enter name">
+      <input type="submit" name="submit" class="submit" value="Search">
+      <input type="reset">
+    </fieldset>
+  </form> -->
+
+   <form action="/form/submit" method="GET"> 
+    <fieldset>
+      <legend>Filter Customers</legend>
+      <p> Filter customers based on their customerId</p>
+      <label for="customerId">Customer Id:</label>
+      <select name="customerId" id="customerId">
+      <option value="Binance">1</option>
+      <option value="Coinbase">2</option>
+      <option value="Kraken">3</option>
+      <option value="Kucoin">4</option>
+      <option value="Kucoin">5</option>
+    </select><br><br>
+      <input type="submit" name="submit" class="submit" value="Search">
+      <input type="reset">
+    </fieldset>
+  </form>
+
+  <br>
+  <form>
+    <fieldset>
+      <legend>Add Customer</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Password:</label>
+      <input type="text" id="Password" name="Password"><br><br>
+      <input type="submit" value="Create">
+      <input type="reset">
+    </fieldset>
+  </form>
+
+  <form id="updateCustomers">
+    <legend><strong>Update Customers</strong></legend>
+        <fieldset class="updateCustomers">
+          <label for="customerId">Customer Id:</label>
+          <select name="productId" id="productId">
+            <option value="free">1</option>
+            <option value="middle">2</option>
+            <option value="premium">3</option>
+            <option value="free">4</option>
+            <option value="middle">5</option>
+          </select><br><br>
+          <label>First Name: </label> <input type="text" name="firstName"><br><br>
+          <label>Last Name: </label> <input type="text" name="lastName"><br><br>
+          <!-- <label>Email:  </label> <input type="text" name="email"><br><br>
+          <label>Password:  </label> <input type="text" name="password"><br><br> -->
+          <input class="btn" type="submit" id="UpdateSaveProducts" value="Update">
+         <input class="btn" type="button" value="cancel" >
+  </fieldset>
+  
+</form> 
+
+</body>
+</html>

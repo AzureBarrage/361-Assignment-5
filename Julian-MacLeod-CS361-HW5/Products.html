@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Products</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<h1>Products</h1>
+
+[<a href="index.html">Home</a>]
+[<a href="Transactions.html">Transactions</a>]
+[<a href="Customers.html">Customers</a>]
+[<a href="Exchanges.html">Exchanges</a>] 
+[<a href="Currencies.html">Currencies</a>]
+[<a href="Login.html">Login</a>]
+[<a href="Profile.html">Profile</a>]
+<div id="browse" style="display: block">
+<p><strong>Browse Products</strong></p>
+<table border="1" cellpadding="5">
+  <tr>
+    <th><a href="#">New</a></th>
+    <th></th>
+    <th>productId</th>
+    <th>free</th>
+    <th>middle</th>
+    <th>premium</th>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >FR1</td>
+    <td align="right" >1</td>
+    <td align="right" >0</td>
+    <td align="right" >0</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >MI1</td>
+    <td align="right" >0</td>
+    <td align="right" >1</td>
+    <td align="right" >0</td>
+  </tr>
+  <tr>
+    <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >PR1</td>
+    <td align="right" >0</td>
+    <td align="right" >1</td>
+    <td align="right" >0</td>
+      </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >FR2</td>
+    <td align="right" >1</td>
+    <td align="right" >0</td>
+    <td align="right" >0</td>
+  </tr>
+  <tr>
+    <td><a href="#">Edit</a></td>
+    <td><a href="#">Delete</a></td>
+    <td align="right" >MI2</td>
+    <td align="right" >0</td>
+    <td align="right" >1</td>
+    <td align="right" >0</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</div>
+
+<br>
+<form>
+  <fieldset>
+    <legend>Add Products</legend>
+    <p>In order for a product to be selected the user needs to add the customer</p>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Password:</label>
+    <input type="text" id="Password" name="Password"><br><br>
+    <label>free</label> <input type="checkbox" name="free"><br><br>
+    <label> middle </label> <input type="checkbox" name="middle"><br><br>
+    <label> premium </label> <input type="checkbox" name="premium"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </fieldset>
+</form>
+
+
+<!-- <div id="insert" style="display: block">
+    <form id="addProducts">
+        <legend><strong>Add Product</strong></legend>
+          <fieldset class="addProducts">
+            <label> free </label> <input type="checkbox" name="free">
+            <label> middle </label> <input type="checkbox" name="middle">
+            <label> premium </label> <input type="checkbox" name="premium">
+          </fieldset>
+          <input class="btn" type="submit" id="addProducts" value="Add a Product">
+          <input class="btn" type="button" value="cancel">
+	</form>
+</div> -->
+
+
+
+<p>&nbsp;</p>
+<div id="update" style="display: block">
+  <form id="updateProducts">
+      <legend><strong>Update Product</strong></legend>
+          <fieldset class="updateProducts">
+            <label for="productId">Product Id:</label>
+            <select name="productId" id="productId">
+              <option value="free">FR1</option>
+              <option value="middle">MI1</option>
+              <option value="premium">PR1</option>
+              <option value="free">FR2</option>
+              <option value="middle">MI2</option>
+            </select><br><br>
+            <label>free</label> <input type="checkbox" name="free"><br><br>
+            <label> middle </label> <input type="checkbox" name="middle"><br><br>
+            <label> premium </label> <input type="checkbox" name="premium"><br><br>
+            <input class="btn" type="submit" id="UpdateSaveProducts" value="Save Products">
+           <input class="btn" type="button" value="cancel" >
+    </fieldset>
+    
+  </form> 
+</div>
+<p>&nbsp;</p>
+<div id="delete" style="display: block">
+  <form id="deleteProducts">
+      <legend><strong>Delete Products</strong></legend>
+          <fieldset class="deleteProducts">
+          <p>Are you sure you wish to delete this Product?</p>
+            
+    </fieldset>
+    <input class="btn" type="submit" id="DeleteProduct" value="Delete Product">
+          <input class="btn" type="button" value="cancel" >
+  </form> 
+</div>
+
+
+
+
+
+
+</body>
+</html>
